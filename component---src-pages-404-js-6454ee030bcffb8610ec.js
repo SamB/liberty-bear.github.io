@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkliberty_bear_github_io=self.webpackChunkliberty_bear_github_io||[]).push([[883],{9616:function(e,t,n){n.r(t),n.d(t,{default:function(){return r}});var u=n(7294);function r(){return u.createElement("main",null,u.createElement("h1",null,"Not Found"),u.createElement("p",null,"You just hit a route that doesn't exist... the sadness."))}}}]);
+//# sourceMappingURL=component---src-pages-404-js-6454ee030bcffb8610ec.js.map
