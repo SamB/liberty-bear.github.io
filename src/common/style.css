@@ -1,0 +1,319 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: #333;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply mt-8 mb-4;
+  &:target {
+    @apply bg-yellow-200;
+  }
+}
+
+h1 {
+  @apply text-4xl;
+}
+
+h2 {
+  @apply text-3xl;
+}
+
+h3 {
+  @apply text-2xl;
+}
+
+h4 {
+  @apply text-xl;
+}
+
+a {
+  @apply text-blue-600 no-underline;
+  &:hover {
+    @apply text-yellow-600;
+  }
+}
+
+p {
+  @apply mb-2;
+}
+
+hr {
+  @apply border-none bg-gray-400 mx-auto my-16;
+  width: 100px;
+  height: 2px;
+}
+
+img {
+  @apply block max-w-full;
+}
+
+blockquote {
+  margin: 16px 0;
+  padding: 8px 0 8px 16px;
+  background: #fbfbfb;
+  color: #666;
+  border-left: 8px solid #ccc;
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+ul,
+ol {
+  @apply mb-5 pl-10;
+}
+
+ul {
+  list-style: square;
+}
+
+ol {
+  @apply list-decimal;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+nav {
+  @apply flex items-center h-16 px-4 shadow text-gray-600;
+  a {
+    color: inherit;
+    &:hover,
+    &:focus,
+    &.active {
+      @apply text-blue-600 border-blue-500;
+    }
+  }
+  .brand {
+    @apply text-lg;
+  }
+  .nav-item {
+    @apply block mx-2 border-b-2 border-transparent;
+  }
+  .nav-icon {
+    @apply relative mr-2 cursor-pointer;
+    > svg {
+      @apply block w-5 h-5 fill-current;
+    }
+  }
+}
+
+.anchor > svg {
+  @apply inline;
+}
+
+:root {
+  --toc-width: 260px;
+}
+
+main {
+  @apply max-w-screen-lg min-w-0 mx-auto px-4;
+  min-height: 70vh;
+  > section {
+    @apply px-4;
+  }
+  @screen lg {
+    &.has-toc {
+      > section {
+        &.with-toc {
+          @apply flex;
+        }
+        &:not(.with-toc) {
+          margin-right: calc(var(--toc-width) + 32px);
+        }
+      }
+    }
+  }
+}
+
+.toc {
+  @apply mb-5;
+  @screen lg {
+    @apply order-3 sticky overflow-auto;
+    width: var(--toc-width);
+    top: 80px;
+    h2 {
+      @apply hidden;
+    }
+  }
+  ul {
+    @apply m-0 pl-4 text-sm list-none;
+  }
+  li {
+    @apply my-2;
+  }
+  p {
+    @apply m-0;
+  }
+  a {
+    &:not(:hover) {
+      @apply text-gray-500;
+    }
+    &.active {
+      @apply text-blue-600;
+    }
+  }
+  > div {
+    @apply border-l border-gray-400;
+  }
+}
+
+:not(pre) > code[class*="language-"] {
+  @apply mx-1 break-words;
+}
+
+.gatsby-highlight-code-line {
+  background-color: #0001;
+  display: block;
+  margin-right: -1em;
+  margin-left: -1em;
+  padding-right: 1em;
+  padding-left: 0.75em;
+  border-left: 0.25em solid #f99;
+}
+
+/**
+ * Add back the container background-color, border-radius, padding, margin
+ * and overflow that we removed from <pre>.
+ */
+.gatsby-highlight {
+  background-color: #f5f2f0;
+  border-radius: 0.3em;
+  margin-bottom: 16px;
+  padding: 1em;
+  overflow: auto;
+}
+
+/**
+ * Remove the default PrismJS theme background-color, border-radius, margin,
+ * padding and overflow.
+ * 1. Make the element just wide enough to fit its content.
+ * 2. Always fill the visible space in .gatsby-highlight.
+ * 3. Adjust the position of the line numbers
+ */
+.gatsby-highlight pre[class*="language-"] {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  overflow: initial;
+  float: left; /* 1 */
+  min-width: 100%; /* 2 */
+}
+
+.mermaid {
+  overflow-x: auto;
+}
+
+.icon-list {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+  }
+  li {
+    display: flex;
+    align-items: center;
+    margin-right: 60px;
+    margin-top: 24px;
+    > .gatsby-resp-image-wrapper {
+      width: 48px;
+      height: 48px;
+      margin-right: 8px !important;
+    }
+  }
+}
+
+.button-list {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  li a {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-top: 16px;
+    padding: 8px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    &:hover {
+      border-color: #bbb;
+    }
+    .gatsby-resp-image-wrapper {
+      display: inline-block !important;
+      width: 48px;
+      height: 48px;
+      margin-right: 8px !important;
+    }
+  }
+}
+
+.home-buttons {
+  @apply mt-8 text-center;
+  margin-bottom: 80px;
+  a {
+    @apply inline-block mx-2 mb-2 px-8 py-3 rounded-full border border-current uppercase;
+    &[target=_blank]:not(:hover) {
+      color: gray;
+    }
+    &.button-primary {
+      @apply bg-blue-600 border-blue-600 text-white;
+    }
+    &.button-white {
+      @apply text-blue-600 border-blue-600;
+    }
+    &.button-gray {
+      @apply bg-gray-300 border-gray-300 text-gray-700;
+    }
+  }
+}
+
+.home-features {
+  ul {
+    @apply p-0 list-none;
+  }
+  > ul {
+    @screen lg {
+      @apply flex;
+    }
+    > li {
+      @apply flex-1 p-4;
+      > ul {
+        @apply mb-0 text-gray-500;
+      }
+      > p {
+        @apply font-semibold text-gray-600;
+      }
+    }
+  }
+}
+
+.sidebar {
+  @apply absolute top-0 left-0 bottom-0 bg-white z-10 transition-transform duration-300 transform -translate-x-full p-4;
+  width: 240px;
+  .sidebar-open & {
+    @apply translate-x-0 border-r border-gray-200;
+  }
+  @screen lg {
+    @apply static min-w-0 p-4 pt-16 translate-x-0 border-none;
+    padding-top: 60px;
+  }
+  ul {
+    @apply sticky list-none p-0;
+    top: 90px;
+  }
+  a:not(.active) {
+    @apply text-gray-500;
+  }
+}
+
+.label {
+  @apply inline-block leading-none mr-1 p-1 text-xs bg-gray-300 border border-gray-300 rounded;
+}
