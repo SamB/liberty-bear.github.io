@@ -80,13 +80,16 @@ li {
 }
 
 nav {
+  background: #c38c66;
   @apply flex items-center h-16 px-4 shadow text-gray-600;
   a {
-    color: inherit;
+    color: #fff;
     &:hover,
     &:focus,
     &.active {
-      @apply text-blue-600 border-blue-500;
+      /*@apply text-blue-600 border-blue-500;*/
+      color: #fff;
+      border-bottom: 1px solid #fff;
     }
   }
   .brand {
@@ -317,3 +320,15 @@ main {
 .label {
   @apply inline-block leading-none mr-1 p-1 text-xs bg-gray-300 border border-gray-300 rounded;
 }
+
+/* Custom CSS */
+.block-title{text-transform: uppercase; text-align: center; color: #c38c66; display: block; border-top: 1px solid #eee; padding-top: 20px;}
+.home-buttons a.button-primary{background: #c38c66; border-color: #c38c66;}
+.text-muted{color: #bbb;}
+.home-features{text-align: center}
+.home-features > ul > li{font-weight: 600; margin-bottom: 20px; font-size: 1.1rem;}
+.home-features > ul > li > ul{margin-top: 5px;}
+.home-features ul > li > ul > li{margin-bottom: 0; font-weight: normal; font-size: 1rem;}
+
+.icon-list li{display: inline-block; text-align: center;}
+.icon-list li > .gatsby-resp-image-wrapper{margin-right: 0 !important; margin-left: 0 !important; margin-bottom: 5px;}

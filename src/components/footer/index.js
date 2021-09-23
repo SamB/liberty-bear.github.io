@@ -13,7 +13,7 @@ function Footer(props) {
     },
   } = props;
   return (
-    <footer className="flex mt-10 p-6 pb-16 border-t border-gray-400 lg:pb-6">
+    <footer className="flex mt-10 p-6 pb-16 border-t border-gray-400 lg:pb-6 text-center">
       <div>
         LibertyBear
         {' '}

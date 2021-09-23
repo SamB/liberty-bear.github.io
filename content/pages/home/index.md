@@ -6,26 +6,26 @@ type: home
 subtitle: An open source userscript manager. The fork of Violentmonkey with performance speed. 
 ---
 
+<div class="text-center"><small class="text-muted">Libertybear provides userscripts support for browsers. We upgrade some components related to script launch speed and fix some Violentmonkey bugs, maybe some of this content is derived from Violentmonkey's policy and we confirm this project is tweaked. edited from Violentmonkey's source code</small></div>
+
 <div class="home-buttons" data-ga-category="home-buttons">
   <a href="/get-it/" class="button-primary" data-ga-label="get-started">Get Started</a>
   <a href="https://github.com/liberty-bear/libertybear" class="button-gray" target="_blank" rel="noopener noreferrer" data-ga-label="github">GitHub</a>
 </div>
 
-Libertybear provides userscripts support for browsers. We upgrade some components related to script launch speed and fix some Violentmonkey bugs, maybe some of this content is derived from Violentmonkey's policy and we confirm this project is tweaked. edited from Violentmonkey's source code
-
-## Features
+<h2 class="block-title">Features</h2>
 
 <div class="home-features">
 
 - Powerful
-  - Customize web pages.
   - Automate your work.
+  - Customize web pages.
 - Data on the cloud
-  - Sync to Dropbox, OneDrive, Google Drive, or a WebDAV service.
+  - Sync to cloud services.
   - Sync between different browsers.
 - User-friendly
-  - Keep simple, no need to make choices.
   - Communicate with external editors.
+  - Keep simple, no need to make choices.
 
 </div>
 
@@ -37,9 +37,9 @@ Therefore, please install only scripts that you trust.
 
 </div>
 
-## Supported Browsers
+<h2 class="block-title">Supported Browsers</h2>
 
-LibertyBear is built with web extension APIs, thus supports many browsers. 
+<div class="text-center">LibertyBear is built with web extension APIs, thus supports many browsers.</div> 
 
 <div class="icon-list">
 
@@ -48,11 +48,11 @@ LibertyBear is built with web extension APIs, thus supports many browsers.
 - ![Edge](../../assets/browsers/edge.png) Edge
 - ![Opera](../../assets/browsers/opera.png) Opera
 - ![Vivaldi](../../assets/browsers/vivaldi.png) Vivaldi
-- ![Chromium](../../assets/browsers/chromium.png) More Chromium based browsers
+- ![Chromium](../../assets/browsers/chromium.png) Chromium
 
 </div>
 
-## Alternatives
+<h2 class="block-title">Alternatives</h2>
 
 <div class="icon-list">
 
@@ -62,7 +62,7 @@ LibertyBear is built with web extension APIs, thus supports many browsers.
 
 </div>
 
-## Contribution
+<h2 class="block-title">Contribution</h2>
 
 You are absolutely welcome to contribute code to [GitHub](https://github.com/liberty-bear).
 

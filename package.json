@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "gatsby develop",
     "build": "gatsby build",
-    "clean:public": "rm -rf public",
+    "clean:public": "rm -rf public && rm -rf .cache",
     "clean": "npm run clean:public",
     "predeploy": "npm run build"
   },
