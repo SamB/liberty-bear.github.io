@@ -3,6 +3,10 @@ title: FAQ
 date: 2017-09-22 14:41:11
 ---
 
+### Why does LibertyBear look so similar to Violentmonkey?
+
+Because LibertyBear is a [fork](https://en.wikipedia.org/wiki/Fork_(software_development)) of [Violentmonkey](https://violentmonkey.github.io/).
+
 ### Why does LibertyBear require `clipboard` permission?
 
 To make `GM_setClipboard` work on different browsers.
